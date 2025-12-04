@@ -1,0 +1,14 @@
+# Place your images here
+
+## Recommended Structure:
+- profile.jpg/png - Your profile photo
+- projects/ - Project screenshots
+- blog/ - Blog post images
+- icons/ - Custom icons (if any)
+- favicon.ico - Website favicon
+
+## Image Optimization Tips:
+- Use WebP format for better compression
+- Compress images before uploading
+- Use appropriate dimensions (don't use oversized images)
+- Consider using lazy loading for better performance
