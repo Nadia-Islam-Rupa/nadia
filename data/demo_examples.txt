@@ -1,0 +1,229 @@
+===========================================
+DEMO DATA EXAMPLES FOR ALL JSON FILES
+===========================================
+
+This file contains example/demo data structures for all JSON files.
+Use these as reference when adding your own data.
+
+===========================================
+1. EXPERIENCE.JSON
+===========================================
+{
+  "experience": [
+    {
+      "title": "Flutter Developer",
+      "company": "Company Name / Freelance",
+      "duration": "2023 - Present",
+      "responsibilities": [
+        "Developed and maintained multiple Flutter applications for iOS and Android",
+        "Collaborated with designers to implement pixel-perfect UI designs",
+        "Integrated REST APIs and implemented state management solutions",
+        "Optimized app performance and reduced load times by 40%"
+      ]
+    },
+    {
+      "title": "Mobile App Developer Intern",
+      "company": "Tech Company Name",
+      "duration": "2022 - 2023",
+      "responsibilities": [
+        "Assisted in developing features for production Flutter applications",
+        "Participated in code reviews and learned best practices",
+        "Fixed bugs and improved existing codebase",
+        "Worked with agile methodology and sprint planning"
+      ]
+    }
+  ]
+}
+
+===========================================
+2. PROJECTS.JSON
+===========================================
+{
+  "projects": [
+    {
+      "id": "project1",
+      "title": "E-Commerce Mobile App",
+      "image": "assets/images/projects/ecommerce-app.png",
+      "description": "A full-featured e-commerce application with product catalog, cart management, payment integration, and order tracking.",
+      "detailedDescription": "A comprehensive e-commerce solution built with Flutter, featuring a seamless shopping experience with product browsing, cart management, secure payment integration, and real-time order tracking.",
+      "tags": ["Flutter", "Firebase", "Payment API"],
+      "features": [
+        "Product catalog with advanced search and filtering",
+        "Shopping cart with real-time updates",
+        "Secure payment gateway integration",
+        "Order tracking and history",
+        "User authentication and profile management"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Stripe API",
+        "Cloud Firestore"
+      ],
+      "demoUrl": "#",
+      "sourceUrl": "https://github.com/yourusername/project"
+    },
+    {
+      "id": "project2",
+      "title": "Task Management App",
+      "image": "assets/images/projects/task-manager.png",
+      "description": "A productivity app for managing tasks, setting reminders, and tracking progress.",
+      "detailedDescription": "A powerful productivity application designed to help users manage their daily tasks efficiently.",
+      "tags": ["Flutter", "SQLite", "Local Notifications"],
+      "features": [
+        "Create, edit, and delete tasks",
+        "Set priorities and deadlines",
+        "Local notifications for reminders",
+        "Progress tracking with statistics"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "Local Notifications"
+      ],
+      "demoUrl": "#",
+      "sourceUrl": "https://github.com/yourusername/project"
+    }
+  ]
+}
+
+NOTE: The "image" field is optional. If not provided, a placeholder will be shown.
+
+===========================================
+3. ACHIEVEMENTS.JSON
+===========================================
+{
+  "achievements": [
+    {
+      "icon": "🏆",
+      "title": "Hackathon Winner",
+      "description": "First place in National Mobile App Development Hackathon 2023"
+    },
+    {
+      "icon": "⭐",
+      "title": "App Store Featured",
+      "description": "Featured app on Google Play Store with 10,000+ downloads"
+    },
+    {
+      "icon": "📱",
+      "title": "20+ Apps Delivered",
+      "description": "Successfully delivered over 20 mobile applications to clients"
+    },
+    {
+      "icon": "🎓",
+      "title": "Certified Developer",
+      "description": "Flutter & Firebase certified professional developer"
+    }
+  ]
+}
+
+===========================================
+4. EDUCATION.JSON
+===========================================
+{
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University Name",
+      "duration": "2019 - 2023",
+      "description": "Focused on software engineering, mobile development, and data structures. Graduated with honors."
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "College Name",
+      "duration": "2017 - 2019",
+      "description": "Studied Science with Mathematics, Physics, and Chemistry."
+    }
+  ]
+}
+
+===========================================
+5. SKILLS.JSON
+===========================================
+{
+  "skills": [
+    {
+      "name": "Flutter",
+      "category": "mobile"
+    },
+    {
+      "name": "Dart",
+      "category": "mobile"
+    },
+    {
+      "name": "Firebase",
+      "category": "backend"
+    },
+    {
+      "name": "REST APIs",
+      "category": "backend"
+    },
+    {
+      "name": "SQLite",
+      "category": "database"
+    },
+    {
+      "name": "MongoDB",
+      "category": "database"
+    },
+    {
+      "name": "Git",
+      "category": "tools"
+    },
+    {
+      "name": "Figma",
+      "category": "tools"
+    }
+  ]
+}
+
+Categories: mobile, backend, database, tools
+
+===========================================
+6. BLOG.JSON
+===========================================
+{
+  "posts": [
+    {
+      "id": "post1",
+      "title": "Getting Started with Flutter",
+      "excerpt": "Learn the basics of Flutter and build your first mobile app in this comprehensive guide.",
+      "date": "2024-01-15",
+      "readTime": "5 min read",
+      "tags": ["Flutter", "Tutorial", "Beginner"],
+      "url": "https://medium.com/@yourusername/getting-started-with-flutter"
+    },
+    {
+      "id": "post2",
+      "title": "State Management in Flutter",
+      "excerpt": "Explore different state management solutions in Flutter and when to use each one.",
+      "date": "2024-01-10",
+      "readTime": "8 min read",
+      "tags": ["Flutter", "State Management", "Advanced"],
+      "url": "https://medium.com/@yourusername/state-management-flutter"
+    }
+  ]
+}
+
+===========================================
+NOTES:
+===========================================
+- JSON does NOT support comments (//)
+- Always use double quotes (") not single quotes (')
+- Remember trailing commas are NOT allowed after last item
+- All strings must be in quotes
+- Numbers and booleans (true/false) don't need quotes
+- Arrays use square brackets []
+- Objects use curly braces {}
+
+===========================================
+QUICK TIPS:
+===========================================
+1. Validate your JSON at: https://jsonlint.com/
+2. Keep JSON files properly formatted for readability
+3. Use consistent naming conventions
+4. Add all required fields for each data type
+5. Empty arrays are valid: []
+6. When adding new items, copy existing format
