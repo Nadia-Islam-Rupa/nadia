@@ -39,9 +39,43 @@ async function loadData() {
         renderProjects();
         renderAchievements();
         renderBlog();
+        
+        // Hide navigation items and sections with no data
+        updateNavigationVisibility();
     } catch (error) {
         console.error('Error loading data:', error);
     }
+}
+
+// ==================== UPDATE NAVIGATION VISIBILITY ====================
+function updateNavigationVisibility() {
+    const navItems = {
+        'education': educationData,
+        'experience': experienceData,
+        'projects': projectsData,
+        'achievements': achievementsData,
+        'blog': blogData
+    };
+
+    Object.keys(navItems).forEach(sectionName => {
+        const data = navItems[sectionName];
+        const hasData = data && data.length > 0;
+        
+        // Hide/show nav link
+        const navLink = document.querySelector(`a[href="#${sectionName}"]`);
+        if (navLink) {
+            const navItem = navLink.parentElement; // Get the <li> element
+            if (navItem) {
+                navItem.style.display = hasData ? '' : 'none';
+            }
+        }
+        
+        // Hide/show section
+        const section = document.getElementById(sectionName);
+        if (section) {
+            section.style.display = hasData ? '' : 'none';
+        }
+    });
 }
 
 // ==================== RENDER SKILLS ====================
@@ -78,7 +112,16 @@ function renderEducation() {
 // ==================== RENDER EXPERIENCE ====================
 function renderExperience() {
     const experienceGrid = document.querySelector('.experience-grid');
-    if (!experienceGrid || experienceData.length === 0) return;
+    if (!experienceGrid) return;
+
+    if (!experienceData || experienceData.length === 0) {
+        experienceGrid.innerHTML = `
+            <div class="empty-state">
+                <p>No experience data available yet.</p>
+            </div>
+        `;
+        return;
+    }
 
     experienceGrid.innerHTML = experienceData.map(exp => `
         <div class="experience-card">
@@ -97,12 +140,24 @@ function renderExperience() {
 // ==================== RENDER PROJECTS ====================
 function renderProjects() {
     const projectsGrid = document.querySelector('.projects-grid');
-    if (!projectsGrid || projectsData.length === 0) return;
+    if (!projectsGrid) return;
+
+    if (!projectsData || projectsData.length === 0) {
+        projectsGrid.innerHTML = `
+            <div class="empty-state">
+                <p>No projects available yet. Check back soon!</p>
+            </div>
+        `;
+        return;
+    }
 
     projectsGrid.innerHTML = projectsData.map(project => `
         <div class="project-card">
             <div class="project-image">
-                <div class="image-placeholder">Project Screenshot</div>
+                ${project.image 
+                    ? `<img src="${project.image}" alt="${project.title}" onerror="this.parentElement.innerHTML='<div class=\\'image-placeholder\\'>Project Screenshot</div>'">`
+                    : '<div class="image-placeholder">Project Screenshot</div>'
+                }
             </div>
             <div class="project-content">
                 <h3>${project.title}</h3>
@@ -125,7 +180,16 @@ function renderProjects() {
 // ==================== RENDER ACHIEVEMENTS ====================
 function renderAchievements() {
     const achievementsGrid = document.querySelector('.achievements-grid');
-    if (!achievementsGrid || achievementsData.length === 0) return;
+    if (!achievementsGrid) return;
+
+    if (!achievementsData || achievementsData.length === 0) {
+        achievementsGrid.innerHTML = `
+            <div class="empty-state">
+                <p>No achievements data available yet.</p>
+            </div>
+        `;
+        return;
+    }
 
     achievementsGrid.innerHTML = achievementsData.map(achievement => `
         <div class="achievement-card">
@@ -585,6 +649,14 @@ function initProjectModal() {
                 // Populate modal content
                 document.querySelector('.modal-title').textContent = project.title;
                 document.querySelector('.modal-description').textContent = project.detailedDescription;
+
+                // Image
+                const modalImage = document.querySelector('.modal-image');
+                if (project.image) {
+                    modalImage.innerHTML = `<img src="${project.image}" alt="${project.title}" onerror="this.parentElement.innerHTML='<div class=\\'image-placeholder\\'>Project Image</div>'">`;
+                } else {
+                    modalImage.innerHTML = '<div class="image-placeholder">Project Image</div>';
+                }
 
                 // Tags
                 const tagsContainer = document.querySelector('.modal-tags');
