@@ -1,6 +1,11 @@
 {
   "achievements": [
     {
+  "icon": "🎓",
+  "title": "Vice Chancellor’s List",
+  "description": "Recognized for exceptional academic excellence and consistent high performance, earning a place on the Vice Chancellor’s List during the Fall 2025 semester at Green University of Bangladesh."
+},
+ {
       "icon": "🏆",
       "title": "Hackathon Winner",
       "description": "First place in National Mobile App Development Hackathon 2023"
