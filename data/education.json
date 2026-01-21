@@ -1,21 +1,15 @@
 {
   "education": [
     {
-      "degree": "Bachelor of Science in Computer Science",
-      "institution": "University Name",
-      "duration": "2019 - 2023",
+      "degree": "B.Sc. in Computer Science & Engineering",
+      "institution": "Green University of Bangladesh",
+      "duration": "September 2022 – Present",
       "description": "Focused on software engineering, mobile development, and algorithms. Completed projects in Flutter and participated in coding competitions."
     },
     {
-      "degree": "Flutter Development Certification",
-      "institution": "Online Platform",
-      "duration": "2022",
-      "description": "Comprehensive Flutter development course covering advanced concepts, state management, and production-ready applications."
-    },
-    {
-      "degree": "Higher Secondary Certificate",
-      "institution": "College Name",
-      "duration": "2017 - 2019",
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Shaheed Police Smrity College",
+      "duration": "June 2019 – December 2021",
       "description": "Science background with focus on Mathematics and Computer Science."
     }
   ]
