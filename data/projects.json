@@ -3,6 +3,7 @@
     {
       "id": "project1",
       "title": "E-Commerce Mobile App",
+      "image": "assets/images/projects/ChatGPT Image Nov 14, 2025, 04_43_15 AM.png",
       "description": "A full-featured e-commerce application with product catalog, cart management, payment integration, and order tracking.",
       "detailedDescription": "A comprehensive e-commerce solution built with Flutter, featuring a seamless shopping experience with product browsing, cart management, secure payment integration, and real-time order tracking. The app includes user authentication, wishlist functionality, product reviews, and push notifications for order updates.",
       "tags": ["Flutter", "Firebase", "Payment API"],
@@ -31,6 +32,7 @@
     {
       "id": "project2",
       "title": "Task Management App",
+      "image": "assets/images/projects/task-manager.png",
       "description": "A productivity app for managing tasks, setting reminders, and tracking progress with beautiful UI and smooth animations.",
       "detailedDescription": "A powerful productivity application designed to help users manage their daily tasks efficiently. Features include task creation with priorities, deadline reminders, progress tracking, and beautiful animations. Built with local database storage for offline access and synchronized across devices.",
       "tags": ["Flutter", "SQLite", "Local Notifications"],
@@ -58,6 +60,7 @@
     {
       "id": "project3",
       "title": "Weather Forecast App",
+      "image": "assets/images/projects/weather-app.png",
       "description": "Real-time weather application with location-based forecasts, beautiful weather animations, and detailed weather data.",
       "detailedDescription": "A real-time weather application providing accurate forecasts with beautiful animations. Features location-based weather data, hourly and weekly forecasts, weather alerts, and interactive weather maps. The app uses geolocation to automatically detect user location and provides detailed weather information.",
       "tags": ["Flutter", "Weather API", "Geolocation"],
@@ -86,6 +89,7 @@
     {
       "id": "project4",
       "title": "Social Media App",
+      "image": "assets/images/projects/social-media.png",
       "description": "A social networking platform with user profiles, posts, comments, likes, and real-time messaging functionality.",
       "detailedDescription": "A feature-rich social networking platform enabling users to connect, share, and communicate. Includes user profiles, post creation with images, real-time comments and likes, messaging functionality, and user discovery features. Built with Firebase for real-time synchronization and scalability.",
       "tags": ["Flutter", "Firebase", "Cloud Firestore"],
