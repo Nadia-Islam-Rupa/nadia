@@ -1,0 +1,304 @@
+/* ==================== ALTERNATIVE ACHIEVEMENT LAYOUTS ==================== */
+/* Copy desired layout to replace the main achievements section in styles.css */
+
+/* ================================================
+   LAYOUT OPTION A: Timeline/Chronological Layout
+   ================================================
+   Best for: Showcasing progression over time
+   Use case: When temporal order matters
+*/
+
+.achievements-grid.layout-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    padding-left: 50px;
+}
+
+.achievements-grid.layout-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+}
+
+.achievements-grid.layout-timeline .achievement-card {
+    position: relative;
+    margin-bottom: 2rem;
+    margin-left: 30px;
+    border-left: none;
+}
+
+.achievements-grid.layout-timeline .achievement-card::before {
+    content: '';
+    position: absolute;
+    left: -45px;
+    top: 30px;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border: 4px solid var(--white);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+    z-index: 2;
+}
+
+/* ================================================
+   LAYOUT OPTION B: Masonry/Pinterest Style
+   ================================================
+   Best for: Visual variety, dynamic heights
+   Use case: Mixed content lengths
+*/
+
+.achievements-grid.layout-masonry {
+    column-count: 3;
+    column-gap: 2rem;
+}
+
+.achievements-grid.layout-masonry .achievement-card {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 100%;
+}
+
+@media (max-width: 968px) {
+    .achievements-grid.layout-masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .achievements-grid.layout-masonry {
+        column-count: 1;
+    }
+}
+
+/* ================================================
+   LAYOUT OPTION C: Category-Based Columns
+   ================================================
+   Best for: Organized by type
+   Use case: Multiple achievement categories
+*/
+
+.achievements-grid.layout-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.achievement-category-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.category-header {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.achievement-category-section .achievement-card {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1.5rem;
+}
+
+/* ================================================
+   LAYOUT OPTION D: Bento Box / Mixed Grid
+   ================================================
+   Best for: Modern, asymmetric design
+   Use case: Highlighting featured achievements
+*/
+
+.achievements-grid.layout-bento {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 180px;
+    gap: 1.5rem;
+}
+
+.achievements-grid.layout-bento .achievement-card:nth-child(1) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.achievements-grid.layout-bento .achievement-card:nth-child(2) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.achievements-grid.layout-bento .achievement-card:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.achievements-grid.layout-bento .achievement-card:nth-child(4) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.achievements-grid.layout-bento .achievement-card:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.achievements-grid.layout-bento .achievement-card:nth-child(6) {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.achievements-grid.layout-bento .achievement-card:nth-child(7) {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+@media (max-width: 968px) {
+    .achievements-grid.layout-bento {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .achievements-grid.layout-bento .achievement-card {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+}
+
+/* ================================================
+   LAYOUT OPTION E: Card Stack / Carousel Style
+   ================================================
+   Best for: Limited space, interactive browsing
+   Use case: Spotlight on individual achievements
+*/
+
+.achievements-grid.layout-stack {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.achievements-grid.layout-stack .achievement-card {
+    min-width: 350px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.achievements-grid.layout-stack::-webkit-scrollbar {
+    height: 8px;
+}
+
+.achievements-grid.layout-stack::-webkit-scrollbar-track {
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 10px;
+}
+
+.achievements-grid.layout-stack::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+/* ================================================
+   MICRO-INTERACTIONS - Enhanced Hover Effects
+   ================================================ */
+
+/* Shimmer Effect */
+.achievement-card.effect-shimmer {
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card.effect-shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.achievement-card.effect-shimmer:hover::before {
+    left: 100%;
+}
+
+/* Tilt Effect */
+.achievement-card.effect-tilt {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.achievement-card.effect-tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(-5deg);
+}
+
+/* Glow Effect */
+.achievement-card.effect-glow:hover {
+    box-shadow: 0 0 30px rgba(102, 126, 234, 0.6),
+                0 0 60px rgba(102, 126, 234, 0.3);
+}
+
+/* Border Reveal Effect */
+.achievement-card.effect-border-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card.effect-border-reveal::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.4s ease;
+}
+
+.achievement-card.effect-border-reveal:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Icon Bounce Effect */
+.achievement-card.effect-bounce:hover .achievement-icon {
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(-5px); }
+    75% { transform: translateY(-8px); }
+}
+
+/* Particle Effect Background */
+.achievement-card.effect-particles {
+    position: relative;
+}
+
+.achievement-card.effect-particles::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(118, 75, 162, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(240, 147, 251, 0.1) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.achievement-card.effect-particles:hover::after {
+    opacity: 1;
+}
