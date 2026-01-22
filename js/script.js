@@ -191,11 +191,18 @@ function renderAchievements() {
         return;
     }
 
-    achievementsGrid.innerHTML = achievementsData.map(achievement => `
+    achievementsGrid.innerHTML = achievementsData.map((achievement, index) => `
         <div class="achievement-card">
-            <div class="achievement-icon">${achievement.icon}</div>
-            <h3>${achievement.title}</h3>
-            <p>${achievement.description}</p>
+            <div class="achievement-header">
+                <div class="achievement-icon">${achievement.icon}</div>
+                ${achievement.date ? `<span class="achievement-date">${achievement.date}</span>` : ''}
+            </div>
+            <div class="achievement-content">
+                <h3>${achievement.title}</h3>
+                <p>${achievement.description}</p>
+                ${achievement.category ? `<span class="achievement-category">${achievement.category}</span>` : ''}
+                ${achievement.verified ? `<span class="achievement-verified">Verified</span>` : ''}
+            </div>
         </div>
     `).join('');
 }
