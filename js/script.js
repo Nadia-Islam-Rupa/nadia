@@ -76,6 +76,30 @@ function updateNavigationVisibility() {
             section.style.display = hasData ? '' : 'none';
         }
     });
+    
+    // Adjust section backgrounds after hiding/showing sections
+    adjustSectionBackgrounds();
+}
+
+// ==================== ADJUST SECTION BACKGROUNDS ====================
+function adjustSectionBackgrounds() {
+    // Get all visible sections
+    const allSections = document.querySelectorAll('.section');
+    const visibleSections = Array.from(allSections).filter(section => {
+        return section.style.display !== 'none';
+    });
+    
+    // Remove all bg-light classes first
+    visibleSections.forEach(section => {
+        section.classList.remove('bg-light');
+    });
+    
+    // Apply bg-light to every even-indexed visible section (0-indexed, so 1st, 3rd, 5th...)
+    visibleSections.forEach((section, index) => {
+        if (index % 2 === 1) {
+            section.classList.add('bg-light');
+        }
+    });
 }
 
 // ==================== RENDER SKILLS ====================
