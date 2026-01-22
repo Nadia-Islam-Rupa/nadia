@@ -3,8 +3,10 @@
     {
       "icon": "🎓",
       "title": "Vice Chancellor's List",
-      "description": "Recognized for exceptional academic excellence and consistent high performance, earning a place on the Vice Chancellor's List during the Fall 2025 semester at Green University of Bangladesh."
+      "description": "Recognized for exceptional academic excellence and consistent high performance, earning a place on the Vice Chancellor's List during the Fall 2025 semester at Green University of Bangladesh.",
+      "date": "Fall 2025",
+      "category": "Academic",
+      "verified": true
     }
-    
   ]
 }
