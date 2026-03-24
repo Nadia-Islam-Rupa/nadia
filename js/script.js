@@ -191,7 +191,10 @@ function renderProjects() {
                 </div>
                 <div class="project-links">
                     <a href="#" class="project-link view-details" data-project="${project.id}">View Details</a>
-                    <a href="${project.sourceUrl}" class="project-link">Source Code</a>
+                    ${typeof project.sourceUrl === 'string' && project.sourceUrl.trim() !== ''
+                        ? `<a href="${project.sourceUrl}" class="project-link">Source Code</a>`
+                        : ''
+                    }
                 </div>
             </div>
         </div>
@@ -459,7 +462,7 @@ function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
-            if (href === '#') return;
+            if (!href || href === '#' || !href.startsWith('#')) return;
 
             e.preventDefault();
             const target = document.querySelector(href);
@@ -702,8 +705,26 @@ function initProjectModal() {
                 techList.innerHTML = project.technologies.map(tech => `<span>${tech}</span>`).join('');
 
                 // Links
-                document.querySelector('.modal-demo').href = project.demoUrl;
-                document.querySelector('.modal-source').href = project.sourceUrl;
+                const demoButton = document.querySelector('.modal-demo');
+                const sourceButton = document.querySelector('.modal-source');
+                const hasDemoUrl = typeof project.demoUrl === 'string' && project.demoUrl.trim() !== '';
+                const hasSourceUrl = typeof project.sourceUrl === 'string' && project.sourceUrl.trim() !== '';
+
+                if (hasDemoUrl) {
+                    demoButton.href = project.demoUrl;
+                    demoButton.style.display = '';
+                } else {
+                    demoButton.removeAttribute('href');
+                    demoButton.style.display = 'none';
+                }
+
+                if (hasSourceUrl) {
+                    sourceButton.href = project.sourceUrl;
+                    sourceButton.style.display = '';
+                } else {
+                    sourceButton.removeAttribute('href');
+                    sourceButton.style.display = 'none';
+                }
 
                 // Show modal
                 modal.classList.add('active');
