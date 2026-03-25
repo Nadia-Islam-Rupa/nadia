@@ -1,38 +1,71 @@
 {
   "projects": [
     {
-  "id": "project1",
-  "title": "E-Commerce Mobile App",
-  "image": "assets/images/projects/ecomers_app.webp",
-  "description": "A modern e-commerce application with category browsing, smart search, favorites, and cart management using Supabase and Riverpod.",
-  "detailedDescription": "A scalable e-commerce mobile application built with Flutter that delivers a smooth and interactive shopping experience. The app allows users to browse categories and sub-categories, explore products, perform real-time search with suggestions, and manage favorites and cart seamlessly. It uses Supabase as a backend for real-time database operations and Riverpod for efficient state management. The architecture follows clean separation of concerns, ensuring maintainability and scalability. The UI is designed with a modern approach, including a custom bottom navigation bar and responsive layouts. This project focuses on performance, user experience, and a production-ready structure.",
-  
-  "tags": ["Flutter", "Supabase", "Riverpod", "E-Commerce"],
-  
-  "features": [
-    "Category and sub-category based product browsing",
-    "Real-time product search with suggestions",
-    "Favorites (wishlist) management",
-    "Shopping cart with persistent data storage",
-    "Dynamic product listing with filtering",
-    "Custom bottom navigation bar UI",
-    "Responsive and modern user interface",
-    "Fast data fetching using Supabase backend",
-    "State management using Riverpod",
-    "Clean and scalable project architecture"
-  ],
-  
-  "technologies": [
-    "Flutter",
-    "Dart",
-    "Supabase",
-    "PostgreSQL",
-    "Riverpod",
-    "GoRouter"
-  ],
-  
-  "demoUrl": "",
-  "sourceUrl": "https://github.com/Nadia-Islam-Rupa/E-Commerce-App-with-admin-pannel"
-}
+      "id": "project2",
+      "title": "E-Commerce Mobile App",
+      "image": "assets/images/projects/ecomers_app.webp",
+      "description": "A modern e-commerce application with category browsing, smart search, favorites, and cart management using Supabase and Riverpod.",
+      "detailedDescription": "A scalable e-commerce mobile application built with Flutter that delivers a smooth and interactive shopping experience. The app allows users to browse categories and sub-categories, explore products, perform real-time search with suggestions, and manage favorites and cart seamlessly. It uses Supabase as a backend for real-time database operations and Riverpod for efficient state management. The architecture follows clean separation of concerns, ensuring maintainability and scalability. The UI is designed with a modern approach, including a custom bottom navigation bar and responsive layouts. This project focuses on performance, user experience, and a production-ready structure.",
+      "tags": [
+        "Flutter",
+        "Supabase",
+        "Riverpod",
+        "E-Commerce"
+      ],
+      "features": [
+        "Category and sub-category based product browsing",
+        "Real-time product search with suggestions",
+        "Favorites (wishlist) management",
+        "Shopping cart with persistent data storage",
+        "Dynamic product listing with filtering",
+        "Custom bottom navigation bar UI",
+        "Responsive and modern user interface",
+        "Fast data fetching using Supabase backend",
+        "State management using Riverpod",
+        "Clean and scalable project architecture"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Supabase",
+        "PostgreSQL",
+        "Riverpod",
+        "GoRouter"
+      ],
+      "demoUrl": "",
+      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/E-Commerce-App-with-admin-pannel"
+    },
+        {
+      "id": "project1",
+      "title": "Finance Management App",
+      "image": "assets/images/projects/finance_app.webp",
+      "description": "A secure and user-friendly finance management app with income, expense tracking and data visualization using Flutter.",
+      "detailedDescription": "A cross-platform finance management application built with Flutter that helps users track their income, expenses, and savings efficiently. The app uses Hive for offline-first local data storage, ensuring fast and secure data access without relying on internet connectivity. It provides categorized transaction management, allowing users to organize their financial activities effectively. Financial insights are visualized using FL Chart, enabling users to understand spending patterns through interactive charts. Riverpod is used for scalable and efficient state management. The app focuses on performance, simplicity, and a clean user interface to deliver a seamless financial tracking experience.",
+      "tags": [
+        "Flutter",
+        "Finance",
+        "Riverpod",
+        "Hive"
+      ],
+      "features": [
+        "Offline-first data storage using Hive",
+        "Income and expense tracking system",
+        "Categorized transaction management",
+        "Interactive financial charts using FL Chart",
+        "Spending summary and analysis",
+        "Fast and lightweight performance",
+        "User-friendly and modern UI",
+        "Efficient state management using Riverpod"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Hive",
+        "Riverpod",
+        "FL Chart"
+      ],
+      "demoUrl": "",
+      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/Finace-App"
+    }
   ]
 }
