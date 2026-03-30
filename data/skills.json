@@ -17,7 +17,7 @@
             "category": "mobile"
         },
         {
-            "name": "Provider",
+            "name": "Riverpod",
             "category": "mobile"
         },
         {
@@ -26,6 +26,10 @@
         },
         {
             "name": "Firebase",
+            "category": "backend"
+        },
+        {
+            "name": "Supabase",
             "category": "backend"
         },
         {
@@ -45,7 +49,7 @@
             "category": "database"
         },
         {
-            "name": "SQLite",
+            "name": "Hive",
             "category": "database"
         },
         {
