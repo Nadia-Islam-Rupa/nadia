@@ -1,6 +1,43 @@
 {
   "projects": [
     {
+      "id": "ai-smart-farming-assistant",
+      "title": "AI-Powered Smart Farming Assistant (Group Project)",
+      "image": "assets/images/projects/smart_farming_app.webp",
+      "description": "A group-based AI-driven smart farming app with disease detection, crop recommendations, and predictive analytics built using Flutter and Machine Learning.",
+      "detailedDescription": "AI-Powered Smart Farming Assistant is a cross-platform mobile application developed using Flutter that helps farmers make intelligent decisions using AI and Machine Learning. The app includes features like crop disease detection using CNN models, smart irrigation, fertilizer recommendation, crop recommendation, yield estimation, and market price forecasting using ML models. It integrates external APIs for real-time weather data and environmental insights. Supabase is used for authentication and cloud database management, ensuring secure and scalable data handling. The system follows Clean Architecture principles, making it modular, maintainable, and scalable. Additionally, an AI chatbot provides real-time assistance to farmers in an easy and interactive way. This is a collaborative group project and is currently 90% completed with continuous improvements.",
+      "tags": [
+        "Flutter",
+        "Machine Learning",
+        "AI",
+        "Agriculture",
+        "Supabase"
+      ],
+      "features": [
+        "Crop disease detection using CNN and image processing",
+        "Smart irrigation system using ML models",
+        "Fertilizer recommendation based on soil nutrients (N, P, K, pH)",
+        "Crop recommendation system using classification models",
+        "Crop yield estimation using regression models",
+        "Market price forecasting using machine learning",
+        "Real-time weather forecasting using external APIs",
+        "AI chatbot for farmer assistance",
+        "Secure authentication and cloud storage using Supabase",
+        "Clean Architecture for scalable and maintainable development"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Python",
+        "FastAPI",
+        "TensorFlow",
+        "Supabase",
+        "REST API"
+      ],
+      "demoUrl": "",
+      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/farmer_assistance"
+    },
+    {
       "id": "project2",
       "title": "E-Commerce Mobile App",
       "image": "assets/images/projects/ecomers_app.webp",
@@ -35,7 +72,7 @@
       "demoUrl": "",
       "sourceUrl": "https://github.com/Nadia-Islam-Rupa/E-Commerce-App-with-admin-pannel"
     },
-        {
+    {
       "id": "project1",
       "title": "Finance Management App",
       "image": "assets/images/projects/finance_app.webp",
@@ -66,6 +103,100 @@
       ],
       "demoUrl": "",
       "sourceUrl": "https://github.com/Nadia-Islam-Rupa/Finace-App"
+    },
+    {
+      "id": "cardiocare-ai",
+      "title": "CardioCare AI - Heart Disease Detection App",
+      "image": "assets/images/projects/project-cardiocareai.webp",
+      "description": "An AI-powered heart disease risk assessment app with data visualization, health tracking, and secure cloud integration using Flutter.",
+      "detailedDescription": "CardioCare AI is a cross-platform mobile application built with Flutter that helps users assess their cardiovascular risk through a comprehensive health questionnaire. The app uses a structured risk calculation system based on medical parameters such as age, cholesterol, blood pressure, and chest pain type. It integrates Firebase Authentication for secure user login and Cloud Firestore for real-time cloud data storage, allowing users to persist and access their health records across devices. The application follows Clean Architecture and utilizes BLoC for scalable state management. It features interactive data visualization using charts and progress indicators to present risk levels clearly. The app also includes assessment history tracking, detailed explanations of risk factors, and a user-friendly interface with smooth animations for an enhanced user experience.",
+      "tags": [
+        "Flutter",
+        "Health",
+        "BLoC",
+        "Firebase"
+      ],
+      "features": [
+        "Heart disease risk assessment using medical parameters",
+        "Interactive data visualization with charts and indicators",
+        "Secure authentication using Firebase Authentication",
+        "Real-time cloud storage with Cloud Firestore",
+        "Assessment history tracking and management",
+        "Detailed explanation of risk factors",
+        "Smooth animations and modern UI design",
+        "Scalable state management using BLoC",
+        "Clean Architecture implementation"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase Authentication",
+        "Cloud Firestore",
+        "SharedPreferences"
+      ],
+      "demoUrl": "",
+      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/heart_disease_prediction"
+    },
+    {
+      "id": "todo-task-manager",
+      "title": "To-Do Task Manager",
+      "image": "assets/images/projects/todo_app.webp",
+      "description": "A simple and efficient task management app with offline storage and real-time updates using Flutter.",
+      "detailedDescription": "To-Do Task Manager is a cross-platform mobile application built with Flutter that helps users organize their daily tasks efficiently. The app supports full CRUD (Create, Read, Update, Delete) operations, allowing users to easily manage their tasks. Hive is used for offline-first local data storage, ensuring fast and reliable performance without requiring an internet connection. Riverpod is implemented for scalable and reactive state management, enabling seamless UI updates whenever task data changes. The app features a clean and intuitive user interface designed to enhance productivity and provide a smooth task tracking experience.",
+      "tags": [
+        "Flutter",
+        "Productivity",
+        "Riverpod",
+        "Hive"
+      ],
+      "features": [
+        "Full CRUD operations for task management",
+        "Offline-first data storage using Hive",
+        "Real-time UI updates based on task changes",
+        "Scalable state management using Riverpod",
+        "Clean and intuitive user interface",
+        "Fast and lightweight performance",
+        "Efficient task organization system"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Hive",
+        "Riverpod"
+      ],
+      "demoUrl": "",
+      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/To-Do-App"
+    },
+    {
+      "id": "weather-forecast-app",
+      "title": "Weather Forecast App",
+      "image": "assets/images/projects/weather_app.webp",
+      "description": "A real-time weather forecasting app with multi-day predictions and clean UI built using Flutter.",
+      "detailedDescription": "Weather Forecast App is a cross-platform mobile application developed using Flutter that provides real-time weather updates and multi-day forecasts. The app integrates REST APIs to fetch accurate and up-to-date weather data, ensuring users always have reliable information. It includes features for displaying current weather conditions as well as future forecasts. Riverpod is used for efficient and reactive state management, enabling smooth UI updates based on API responses. The app also uses the intl package for proper date and time formatting. With a clean and user-friendly interface, the app focuses on delivering a seamless and informative weather experience.",
+      "tags": [
+        "Flutter",
+        "Weather",
+        "Riverpod",
+        "API"
+      ],
+      "features": [
+        "Real-time weather data integration using REST API",
+        "Current weather and multi-day forecast system",
+        "Efficient API handling and data parsing",
+        "Reactive state management using Riverpod",
+        "Clean and user-friendly UI design",
+        "Accurate date and time formatting using intl",
+        "Smooth performance and fast data updates"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "REST API",
+        "intl"
+      ],
+      "demoUrl": "",
+      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/weather-forecast"
     }
   ]
 }
