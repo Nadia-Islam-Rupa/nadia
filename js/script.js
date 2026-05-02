@@ -39,12 +39,23 @@ async function loadData() {
         renderProjects();
         renderAchievements();
         renderBlog();
-        
+
+        // Update hero stat counters with real data counts
+        updateHeroStats();
+
         // Hide navigation items and sections with no data
         updateNavigationVisibility();
     } catch (error) {
         console.error('Error loading data:', error);
     }
+}
+
+// ==================== UPDATE HERO STATS ====================
+function updateHeroStats() {
+    const projectStat = document.querySelector('.stat-projects');
+    const skillStat = document.querySelector('.stat-skills');
+    if (projectStat && projectsData.length > 0) projectStat.textContent = projectsData.length;
+    if (skillStat && skillsData.length > 0) skillStat.textContent = skillsData.length + '+';
 }
 
 // ==================== UPDATE NAVIGATION VISIBILITY ====================
