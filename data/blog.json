@@ -1,3 +1,18 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "id": "post1",
+      "title": "Flutter's Three Trees",
+      "excerpt": "Learn about Flutter's Widget Tree, Element Tree, and Render Tree — what they are, why they exist, and how they work together to power Flutter's performance.",
+      "date": "2026-05-20",
+      "publisher": "Medium",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Mobile Development",
+        "Performance"
+      ],
+      "url": "https://medium.com/@sohasara853/flutters-three-trees-00541f02c040"
+    }
+  ]
 }
