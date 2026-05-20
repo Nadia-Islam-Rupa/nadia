@@ -250,21 +250,20 @@ function renderBlog() {
     const blogGrid = document.querySelector('.blog-grid');
     if (!blogGrid || blogData.length === 0) return;
 
-    blogGrid.innerHTML = blogData.map(post => `
-        <article class="blog-card">
-            <div class="blog-image">
-                <div class="image-placeholder">Blog Image</div>
-            </div>
+    blogGrid.innerHTML = blogData.map((post, index) => `
+        <article class="blog-card" style="animation-delay: ${index * 0.12}s">
             <div class="blog-content">
-                <div class="blog-meta">
-                    <span class="blog-category">${post.category}</span>
-                    <span class="blog-date">${post.date}</span>
+                <div class="blog-tags">
+                    ${(post.tags || []).map(tag => `<span class="blog-tag">${tag}</span>`).join('')}
                 </div>
                 <h3>${post.title}</h3>
-                <p>${post.excerpt}</p>
+                <p class="blog-excerpt">${post.excerpt}</p>
                 <div class="blog-footer">
-                    <span class="read-time">${post.readTime}</span>
-                    <a href="${post.url}" class="read-more">Read More →</a>
+                    <div class="blog-meta">
+                        <span class="blog-date">${post.date}</span>
+                        ${post.publisher ? `<span class="blog-publisher">${post.publisher}</span>` : ''}
+                    </div>
+                    <a href="${post.url}" target="_blank" rel="noopener noreferrer" class="blog-read-more">Read More →</a>
                 </div>
             </div>
         </article>
