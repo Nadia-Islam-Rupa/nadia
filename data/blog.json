@@ -13,6 +13,21 @@
         "Performance"
       ],
       "url": "https://medium.com/@sohasara853/flutters-three-trees-00541f02c040"
+    },
+    {
+      "id": "post2",
+      "title": "Riverpod 2.0: The Complete Guide — From Zero to Advanced Patterns",
+      "excerpt": "Master Flutter's most powerful state management solution, from your first provider to production-grade architecture — covering providers, notifiers, async patterns, testing, and more.",
+      "date": "2026-05-21",
+      "publisher": "Medium",
+      "tags": [
+        "Flutter",
+        "Riverpod",
+        "State Management",
+        "Advanced",
+        "Tutorial"
+      ],
+      "url": "https://medium.com/@sohasara853/riverpod-2-0-the-complete-guide-from-zero-to-advanced-patterns-fb645de69bd2"
     }
   ]
 }
