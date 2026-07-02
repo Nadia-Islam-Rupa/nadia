@@ -386,6 +386,7 @@ This project is open source and available for personal and commercial use. No at
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [CSS-Tricks](https://css-tricks.com/)
 - [JavaScript.info](https://javascript.info/)
+  
 
 ## 💡 Tips for Customization
 
