@@ -25,6 +25,18 @@
             "category": "mobile"
         },
         {
+            "name": "BLoC",
+            "category": "mobile"
+        },
+        {
+            "name": "GoRouter",
+            "category": "mobile"
+        },
+        {
+            "name": "Clean Architecture",
+            "category": "mobile"
+        },
+        {
             "name": "Firebase",
             "category": "backend"
         },
@@ -45,6 +57,14 @@
             "category": "backend"
         },
         {
+            "name": "FastAPI",
+            "category": "backend"
+        },
+        {
+            "name": "Google OAuth",
+            "category": "backend"
+        },
+        {
             "name": "MySQL",
             "category": "database"
         },
@@ -57,6 +77,10 @@
             "category": "database"
         },
         {
+            "name": "SQLite",
+            "category": "database"
+        },
+        {
             "name": "Git",
             "category": "tools"
         },
@@ -66,6 +90,22 @@
         },
         {
             "name": "VS Code",
+            "category": "tools"
+        },
+        {
+            "name": "Python",
+            "category": "tools"
+        },
+        {
+            "name": "Java",
+            "category": "tools"
+        },
+        {
+            "name": "C",
+            "category": "tools"
+        },
+        {
+            "name": "TensorFlow",
             "category": "tools"
         }
     ]
