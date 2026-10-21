@@ -1,3 +1,17 @@
 {
-  "experience": []
+  "experience": [
+    {
+      "title": "Flutter Developer Intern",
+      "company": "Wizard Software & Technology Bangladesh Ltd.",
+      "duration": "July 2026 – Present",
+      "responsibilities": [
+        "Developing production-ready Flutter applications using Clean Architecture.",
+        "Converting Figma designs into responsive and pixel-perfect user interfaces.",
+        "Integrating RESTful APIs and implementing state management with Riverpod.",
+        "Implementing authentication, local database solutions, and reusable UI components.",
+        "Collaborating with the development team using Git, GitHub, and Agile methodologies.",
+        "Debugging issues, optimizing application performance, and developing new features."
+      ]
+    }
+  ]
 }

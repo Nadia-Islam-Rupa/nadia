@@ -722,6 +722,9 @@ function initProjectModal() {
 
                 if (hasDemoUrl) {
                     demoButton.href = project.demoUrl;
+                    demoButton.textContent = project.demoUrl.includes('play.google.com')
+                        ? 'Get it on Google Play'
+                        : 'Live Demo';
                     demoButton.style.display = '';
                 } else {
                     demoButton.removeAttribute('href');

@@ -1,6 +1,80 @@
 {
   "projects": [
     {
+      "id": "exambuzz",
+      "title": "ExamBuzz – Exam Preparation Platform",
+      "image": "",
+      "description": "A production exam-prep app on Google Play with live MCQ and written exams, merit lists, question banks, and recorded classes.",
+      "detailedDescription": "ExamBuzz is a production exam preparation platform built with Flutter and published on Google Play. Students can take timed live MCQ and written exams, view results and merit lists, practice from question banks, watch recorded classes, and purchase premium study packages. Written answers are submitted by scanning documents, and a dedicated teacher panel lets instructors evaluate student papers. The app renders LaTeX/HTML math content and supports in-app PDF viewing. It integrates Firebase Authentication with Google Sign-In, FCM push notifications, screenshot protection, secure token storage, and in-app updates. The codebase follows a scalable feature-first Clean Architecture with 60+ BLoCs and dynamic nested category navigation driven by a REST API.",
+      "tags": [
+        "Flutter",
+        "BLoC",
+        "Firebase",
+        "EdTech"
+      ],
+      "features": [
+        "Timed live MCQ and written exams",
+        "Results and merit lists",
+        "Question banks and recorded classes",
+        "Premium study packages",
+        "Written-answer submission via document scanning",
+        "Teacher panel for evaluating student papers",
+        "LaTeX/HTML math rendering and in-app PDF viewing",
+        "Firebase Auth and Google Sign-In",
+        "FCM push notifications and in-app updates",
+        "Screenshot protection and secure token storage",
+        "Feature-first Clean Architecture with 60+ BLoCs",
+        "Dynamic nested category navigation driven by a REST API"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "BLoC",
+        "Dio",
+        "GetIt",
+        "GoRouter",
+        "Hive",
+        "Firebase"
+      ],
+      "demoUrl": "https://play.google.com/store/apps/details?id=com.exambuzz.preparation&pli=1",
+      "sourceUrl": ""
+    },
+    {
+      "id": "chatify",
+      "title": "Chatify – Real-Time Chat Application",
+      "image": "",
+      "description": "A cross-platform real-time messaging app with 1-to-1 chat, image sharing, typing indicators, and read receipts using Supabase and Riverpod.",
+      "detailedDescription": "Chatify is a cross-platform real-time messaging application built with Flutter. It supports 1-to-1 chat, image sharing, typing indicators, read receipts, and unread badges. Users can search for friends, send and accept friend requests, manage their profiles, and see who is online. The app also includes theme persistence and secure session management. It is built on Clean Architecture with Riverpod for state management, GoRouter for navigation, and Supabase for authentication, PostgreSQL database, realtime updates, and storage.",
+      "tags": [
+        "Flutter",
+        "Supabase",
+        "Riverpod",
+        "Real-Time"
+      ],
+      "features": [
+        "1-to-1 real-time messaging",
+        "Image sharing",
+        "Typing indicators, read receipts, and unread badges",
+        "Friend search and friend requests",
+        "Online presence",
+        "Profile management",
+        "Theme persistence",
+        "Secure authentication and session management",
+        "Clean Architecture with Riverpod and GoRouter"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Supabase",
+        "PostgreSQL",
+        "Riverpod",
+        "GoRouter",
+        "SharedPreferences"
+      ],
+      "demoUrl": "",
+      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/realtime-chat-app-chatify"
+    },
+    {
       "id": "ai-smart-farming-assistant",
       "title": "AI-Powered Smart Farming Assistant (Group Project)",
       "image": "assets/images/projects/smart_farming_app.webp",
@@ -70,7 +144,36 @@
         "GoRouter"
       ],
       "demoUrl": "",
-      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/E-Commerce-App-with-admin-pannel"
+      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/Full-Stack-E-Commerce-App"
+    },
+    {
+      "id": "admin-panel-dashboard",
+      "title": "Admin Panel Dashboard",
+      "image": "",
+      "description": "A real-time admin dashboard for the e-commerce app with analytics, full CRUD, and Google OAuth via Supabase.",
+      "detailedDescription": "Admin Panel Dashboard is the companion admin app for the E-Commerce Mobile App, built with Flutter. It shows real-time analytics such as total users, products, and categories, and provides full CRUD operations for managing products and users. Authentication is secured with email/password and Google OAuth through Supabase, and state is managed with Riverpod.",
+      "tags": [
+        "Flutter",
+        "Supabase",
+        "Riverpod",
+        "Dashboard"
+      ],
+      "features": [
+        "Real-time analytics for users, products, and categories",
+        "Full CRUD for products and users",
+        "Email/password authentication",
+        "Google OAuth sign-in via Supabase",
+        "State management using Riverpod"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Supabase",
+        "Riverpod",
+        "Google OAuth"
+      ],
+      "demoUrl": "",
+      "sourceUrl": "https://github.com/Nadia-Islam-Rupa/Admin_panel_e_commerce"
     },
     {
       "id": "project1",
