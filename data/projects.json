@@ -2,6 +2,7 @@
   "projects": [
     {
       "id": "exambuzz",
+      "featured": true,
       "title": "ExamBuzz – Exam Preparation Platform",
       "image": "assets/images/projects/exambuzz_app.webp",
       "description": "A production exam-prep app on Google Play with live MCQ and written exams, merit lists, question banks, and recorded classes.",

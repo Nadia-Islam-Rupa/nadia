@@ -173,7 +173,14 @@ function renderExperience() {
 }
 
 // ==================== RENDER PROJECTS ====================
+function isPlayStoreUrl(url) {
+    return typeof url === 'string' && url.includes('play.google.com');
+}
+
 function renderProjects() {
+    const projectCount = document.getElementById('hero-project-count');
+    if (projectCount && projectsData.length > 0) projectCount.textContent = projectsData.length;
+
     const projectsGrid = document.querySelector('.projects-grid');
     if (!projectsGrid) return;
 
@@ -187,14 +194,18 @@ function renderProjects() {
     }
 
     projectsGrid.innerHTML = projectsData.map(project => `
-        <div class="project-card">
+        <div class="project-card${project.featured ? ' featured' : ''}">
             <div class="project-image">
-                ${project.image 
+                ${project.image
                     ? `<img src="${project.image}" alt="${project.title}" onerror="this.parentElement.innerHTML='<div class=\\'image-placeholder\\'>Project Screenshot</div>'">`
                     : '<div class="image-placeholder">Project Screenshot</div>'
                 }
             </div>
             <div class="project-content">
+                ${isPlayStoreUrl(project.demoUrl)
+                    ? '<span class="project-live-badge"><span class="badge-dot"></span>Live on Google Play</span>'
+                    : ''
+                }
                 <h3>${project.title}</h3>
                 <p class="project-description">${project.description}</p>
                 <div class="project-tags">
@@ -202,6 +213,10 @@ function renderProjects() {
                 </div>
                 <div class="project-links">
                     <a href="#" class="project-link view-details" data-project="${project.id}">View Details</a>
+                    ${isPlayStoreUrl(project.demoUrl)
+                        ? `<a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-link">Google Play</a>`
+                        : ''
+                    }
                     ${typeof project.sourceUrl === 'string' && project.sourceUrl.trim() !== ''
                         ? `<a href="${project.sourceUrl}" class="project-link">Source Code</a>`
                         : ''
@@ -722,7 +737,7 @@ function initProjectModal() {
 
                 if (hasDemoUrl) {
                     demoButton.href = project.demoUrl;
-                    demoButton.textContent = project.demoUrl.includes('play.google.com')
+                    demoButton.textContent = isPlayStoreUrl(project.demoUrl)
                         ? 'Get it on Google Play'
                         : 'Live Demo';
                     demoButton.style.display = '';
